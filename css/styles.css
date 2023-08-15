@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9c9c9c;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+main {
+    width: 1024px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+h2 {
+    margin: 0px;
+}
+
+.title {
+    width: 1024px;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title h1 {
+    background-color: #00669F;
+    width: 100%;
+    margin: 0px;
+    padding: 15px 20px;
+    font-weight: 400;
+
+
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    margin: auto;
+    background-color: #1CD1B0;
+    height: 38px;
+}
+
+.discount p {
+    padding-left: 20px;
+}
+
+.characters {
+    width: 960px;
+    padding-block-start: 150px;
+    padding-block-end: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.hero-card {
+    border-top-left-radius: 10px;
+
+    border-top-right-radius: 10px;
+    width: 300px;
+    height: 529px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    position: relative;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.hero-img {
+    border-radius: 50%;
+    width: 120px;
+    align-self: center;
+    position: absolute;
+    bottom: -50px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+div.hero-name p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0px 4px;
+
+}
+
+.hero-description {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.fa-heart {
+    position: absolute;
+    color: #CC2424;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+
+}
+
+.more-info {
+    width: 129px;
+    height: 49px;
+    background-color: #00669F;
+    align-self: center;
+    color: white;
+    border: none;
+    padding-block-end: 5px;
+    margin-top: px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #00669F;
+    height: 51px;
+    margin: 0;
+    padding-left: 20px;
+    color: #fff;
+}
