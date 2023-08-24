@@ -7,11 +7,15 @@
 body {
     background-color: #9c9c9c;
     font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+}
 
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 main {
-    width: 1024px;
     margin: auto;
     background-color: #fff;
     display: flex;
@@ -19,7 +23,6 @@ main {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 h2 {
@@ -27,7 +30,6 @@ h2 {
 }
 
 .title {
-    width: 1024px;
     margin: auto;
     position: sticky;
     top: 0;
@@ -41,14 +43,11 @@ h2 {
     margin: 0px;
     padding: 15px 20px;
     font-weight: 400;
-
-
 }
 
 .discount {
     display: flex;
     align-items: center;
-    width: 1024px;
     margin: auto;
     background-color: #1CD1B0;
     height: 38px;
@@ -56,29 +55,58 @@ h2 {
 
 .discount p {
     padding-left: 20px;
+    margin-top: 0;
 }
 
 .characters {
-    width: 960px;
-    padding-block-start: 150px;
-    padding-block-end: 100px;
+    width: 100%;
+    padding-block-start: 50px;
+    padding-block-end: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    position: relative;
+}
+
+.scroll-down {
+    z-index: 100;
+    position: absolute;
+    right: 10px;
+    top: 626px;
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #00669F;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.hero-card {
-    border-top-left-radius: 10px;
+.scroll-down p {
+    margin: auto;
+}
 
+.scroll-down p a,
+.scroll-down p a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-card {
+    margin: 15px 5px 70px;
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 300px;
-    height: 529px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     background-color: #eee;
     position: relative;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
 }
 
 .hero-img-container {
@@ -86,7 +114,12 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+}
 
+.hero-bkg {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-height: 180px;
 }
 
 .hero-img {
@@ -100,7 +133,7 @@ h2 {
 
 div.hero-name p {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.87rem;
     font-weight: 400;
     margin: 20px 0px 4px;
 
@@ -108,7 +141,7 @@ div.hero-name p {
 
 .hero-description {
     padding: 15px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0px;
 }
@@ -118,11 +151,12 @@ div.hero-name p {
     color: #CC2424;
     top: 10px;
     left: 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 .more-info {
+    margin-top: auto;
     width: 129px;
     height: 49px;
     background-color: #00669F;
@@ -130,20 +164,38 @@ div.hero-name p {
     color: white;
     border: none;
     padding-block-end: 5px;
-    margin-top: px;
 }
 
 footer {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #00669F;
+    align-items: center;
+    position: relative;
 }
 
 footer p {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #00669F;
-    height: 51px;
-    margin: 0;
-    padding-left: 20px;
     color: #fff;
+}
+
+.github-logo {
+    position: absolute;
+    right: 50px;
+    margin-left: auto;
+    width: 100px;
+}
+
+@media (max-width:1023px) {
+    .scroll-down {
+        display: flex;
+    }
+}
+
+@media (max-width:767px) {
+    .scroll-down {
+        top: 618px;
+        flex: 1;
+    }
 }
