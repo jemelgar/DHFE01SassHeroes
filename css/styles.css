@@ -191,6 +191,22 @@ footer p {
     .scroll-down {
         display: flex;
     }
+
+    .github-logo {
+        display: block;
+        position: relative;
+        right: auto;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+    }
 }
 
 @media (max-width:767px) {
