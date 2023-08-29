@@ -1,0 +1,110 @@
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+
+.banner {
+    text-align: left;
+}
+
+.container {
+    width: 100%;
+}
+
+.form-container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #00669F;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+h1,
+.subtitle {
+    text-align: center;
+    color: #fff;
+}
+
+label,
+.input-container,
+textarea {
+    margin: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.input-container,
+input,
+select {
+    width: 45%;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border-radius: 12px;
+    height: 40px;
+    border: none;
+}
+
+textarea {
+    height: 300px;
+    resize: none;
+}
+
+textarea::placeholder {
+    padding: 10px;
+}
+
+.hero-type,
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+p {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.hero-features input {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+hr {
+    width: 100%;
+}
+
+.hero-features label {
+    width: 85%;
+    margin: 0 5px;
+}
+
+footer>p {
+    margin: 15px;
+    text-align: center;
+}
+
+.btn-send {
+    width: 30%;
+    background-color: #1CD1B0;
+    font-size: 24px;
+    font-weight: 700;
+
+}

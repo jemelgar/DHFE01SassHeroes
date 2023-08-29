@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/stylesAddHero.css">
+    <title>Heroes</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="discount">
+            <p>Descuentos 20%</p>
+        </section>
+        <section class="title">
+            <img src="../img/Logo.png" alt="">
+            <h1 class="banner">Nombre tienda</h1>
+        </section>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="form-container">
+                <h1>Añadí tu super!</h1>
+                <p class="subtitle">Agrega tu personaje favorito completando las opciones</p>
+                <form action="#" method="" autocomplete="off">
+                    <div class="input-container">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input-container">
+                        <label for="specie">Especie</label>
+                        <select name="specie" id="specie">
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="creation-date">Fecha</label>
+                        <input type="date" name="creation-date" id="creation-date">
+                    </div>
+                    <div class="input-container">
+                        <label for="hero-photo">Agregar foto</label>
+                        <input type="file">
+                    </div>
+
+                    <div class="input-container">
+                        <textarea name="hero-desc" id="hero-desc" placeholder="Descripción"></textarea>
+                    </div>
+                    <div class="hero-type input-container">
+                        <p>Poderes</p>
+                        <div class="hero-features">
+                            <input type="checkbox" name="fly" id="fly">
+                            <label for="fly">Volar</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Superinteligencia</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Vista de rayo láser</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Billetera gorda</label>
+                        </div>
+                        <hr>
+                        Tipo de personaje
+                        <div class="hero-features">
+                            <input type="radio" value="" name="choose-hero" id="hero">
+                            <label for="hero">Héroe / Heroína</label>
+                            <input type="radio" name="choose-hero" value="" id="villian">
+                            <label for="villian">Villano / Villana</label>
+                        </div>
+                    </div>
+                    <input type="button" value="Añadir" class="btn-send">
+
+                </form>
+            </section>
+
+            <footer>
+                <p>Todos los derechos reservados a FRONT END 1 | Enrique Melgar</p>
+                <img src="../img/Github.png" alt="github logo" class="github-logo">
+            </footer>
+        </main>
+    </div>
+
+</body>
+
+</html>

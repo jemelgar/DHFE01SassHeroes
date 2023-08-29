@@ -10,9 +10,42 @@ body {
     margin-top: 0;
 }
 
+.title {
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #00669F;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: #000;
+}
+
+.nav-bar a,
+ul {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0;
+
+}
+
+.nav-bar li {
+    margin: 5px;
+
+}
+
+a,
+a:visited {
+    color: #fff;
+
 }
 
 main {
