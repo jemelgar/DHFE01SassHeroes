@@ -12,6 +12,13 @@ body {
     width: 100%;
 }
 
+.title {
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #00669F;
+}
+
 .form-container {
     width: 60vw;
     display: flex;
