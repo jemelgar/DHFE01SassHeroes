@@ -40,8 +40,10 @@
                 <p class="subtitle">Agrega tu personaje favorito completando las opciones</p>
                 <form action="#" method="" autocomplete="off">
                     <div class="input-container">
+
+                        <input type="text" name="name" id="name" minlength="3" title="Ingresa al menos 3 letras"
+                            required>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" id="name">
                     </div>
                     <div class="input-container">
                         <label for="specie">Especie</label>
@@ -50,12 +52,12 @@
                         </select>
                     </div>
                     <div class="input-container">
+                        <input type="date" name="creation-date" id="creation-date" required>
                         <label for="creation-date">Fecha</label>
-                        <input type="date" name="creation-date" id="creation-date">
                     </div>
                     <div class="input-container">
                         <label for="hero-photo">Agregar foto</label>
-                        <input type="file">
+                        <input type="file" id="hero-photo">
                     </div>
 
                     <div class="input-container">
@@ -66,12 +68,12 @@
                         <div class="hero-features">
                             <input type="checkbox" name="fly" id="fly">
                             <label for="fly">Volar</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Superinteligencia</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Vista de rayo láser</label>
-                            <input type="checkbox" name="" id="">
-                            <label for="">Billetera gorda</label>
+                            <input type="checkbox" name="" id="Superinteligencia">
+                            <label for="Superinteligencia">Superinteligencia</label>
+                            <input type="checkbox" name="" id="vision">
+                            <label for="vision">Vista de rayo láser</label>
+                            <input type="checkbox" name="" id="billetera">
+                            <label for="billetera">Billetera gorda</label>
                         </div>
                         <hr>
                         Tipo de personaje
@@ -82,7 +84,7 @@
                             <label for="villian">Villano / Villana</label>
                         </div>
                     </div>
-                    <input type="button" value="Añadir" class="btn-send">
+                    <input type="submit" value="Añadir" class="btn-send">
 
                 </form>
             </section>

@@ -63,15 +63,18 @@ textarea {
     border-radius: 12px;
     height: 40px;
     border: none;
+    padding-left: 10px;
 }
 
 textarea {
     height: 300px;
     resize: none;
+    padding: 10px;
 }
 
-textarea::placeholder {
-    padding: 10px;
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero-type,
@@ -114,4 +117,45 @@ footer>p {
     font-size: 24px;
     font-weight: 700;
 
+}
+
+input:focus,
+textarea:focus {
+    background-color: lightblue;
+    outline: none;
+
+}
+
+#name~label,
+#creation-date~label {
+    order: -1;
+}
+
+#name:valid {
+    border: solid 3px #1CD1B0;
+}
+
+
+#name:focus+label::after {
+    content: " Ingresa más de 3 letras";
+    color: rgb(252, 120, 120);
+    font-size: 12px;
+
+}
+
+#name:valid+label::after,
+#creation-date:valid+label::after {
+    content: " ✅";
+    font-size: 12px;
+}
+
+
+#name:invalid,
+#creation-date:invalid {
+    color: red;
+    border: solid 2px rgb(252, 120, 120);
+}
+
+#creation-date:valid {
+    border: solid 3px #1CD1B0;
 }
