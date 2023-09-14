@@ -1,0 +1,231 @@
+$color-primary: #000;
+$color-secondary: #fff;
+$bg-color-important: #00669F;
+$favorite-color: #CC2424;
+$card-color: #f2f2f2;
+$offer-color: orange;
+$font-stack: 'Roboto', sans-serif;
+
+//----------MIXINS --------------
+@mixin flex-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin card-radious {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+//------------EXTENDS-------------------
+%custom-btn {
+    border: none;
+    color: white;
+    height: 49px;
+    margin-bottom: 1rem;
+    margin-top: auto;
+    text-decoration: none;
+    width: 129px;
+
+    &:hover {
+        background-color: $color-primary;
+        cursor: pointer;
+    }
+
+    &:visited {
+        color: #f2f2f2;
+    }
+}
+
+//----------------------------------------
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $card-color;
+    font-family: $font-stack;
+}
+
+.container {
+    @include flex-container;
+    background-color: $color-secondary;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75%;
+
+}
+
+.discount {
+    align-self: stretch;
+    background-color: $offer-color;
+}
+
+.title {
+    @include flex-container;
+    align-self: stretch;
+    background-color: $bg-color-important;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    h1 {
+        color: $color-primary;
+    }
+}
+
+nav {
+    align-self: stretch;
+    background-color: $color-primary;
+    padding: .5rem;
+
+    ul {
+        @include flex-container;
+        justify-content: flex-end;
+        gap: 1rem;
+        list-style-type: none;
+    }
+
+    li:nth-last-child(1) {
+        margin-right: 1rem;
+    }
+
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+main {
+    @include flex-container;
+
+    section {
+        @include flex-container;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        margin-top: 1rem
+    }
+
+    article {
+        @include flex-container;
+        @include card-radious;
+        @include box-shadow;
+        align-self: stretch;
+        background-color: $card-color;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        min-height: 550px;
+        width: 300px;
+
+        .hero-img {
+            @include box-shadow;
+            border-radius: 50%;
+            bottom: -50px;
+            position: absolute;
+            width: 120px;
+        }
+
+        .hero-bkg {
+            @include card-radious;
+            max-height: 180px;
+            width: 100%;
+        }
+
+        .hero-img-container {
+            @include flex-container;
+            justify-content: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .hero-name p {
+            font-size: 1.87rem;
+            font-weight: 400;
+            margin: 20px 0px 4px;
+            text-align: center;
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0px;
+            padding: 15px;
+        }
+
+        .fa-heart {
+            color: $favorite-color;
+            font-size: 1.25rem;
+            left: 10px;
+            position: absolute;
+            top: 10px;
+
+        }
+
+        button {
+            @extend %custom-btn;
+            align-self: center;
+            background-color: $bg-color-important;
+
+        }
+    }
+
+}
+
+.scroll-down {
+    @include flex-container;
+    background-color: $bg-color-important;
+    border-radius: 50%;
+    font-size: 3rem;
+    height: 80px;
+    position: absolute;
+    right: 10px;
+    top: 626px;
+    width: 80px;
+    z-index: 100;
+
+    a {
+        @extend %custom-btn;
+
+        &:hover {
+            background-color: $bg-color-important
+        }
+    }
+
+}
+
+footer {
+    @include flex-container;
+    background-color: $bg-color-important;
+    flex-wrap: wrap;
+    height: 60px;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+
+    p {
+        color: $color-secondary;
+    }
+
+    .github-logo {
+        margin-left: auto;
+        position: absolute;
+        right: 50px;
+        width: 100px;
+    }
+}

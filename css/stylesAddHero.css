@@ -149,7 +149,6 @@ textarea:focus {
     font-size: 12px;
 }
 
-
 #name:invalid,
 #creation-date:invalid {
     color: red;

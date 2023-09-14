@@ -1,0 +1,204 @@
+.scroll-down a, main article button {
+  border: none;
+  color: white;
+  height: 49px;
+  margin-bottom: 1rem;
+  margin-top: auto;
+  text-decoration: none;
+  width: 129px;
+}
+.scroll-down a:hover, main article button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+.scroll-down a:visited, main article button:visited {
+  color: #f2f2f2;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.discount {
+  align-self: stretch;
+  background-color: orange;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: stretch;
+  background-color: #00669F;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.title h1 {
+  color: #000;
+}
+
+nav {
+  align-self: stretch;
+  background-color: #000;
+  padding: 0.5rem;
+}
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style-type: none;
+}
+nav li:nth-last-child(1) {
+  margin-right: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav:hover {
+  color: #fff;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+main article {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  align-self: stretch;
+  background-color: #f2f2f2;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 550px;
+  width: 300px;
+}
+main article .hero-img {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  bottom: -50px;
+  position: absolute;
+  width: 120px;
+}
+main article .hero-bkg {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  max-height: 180px;
+  width: 100%;
+}
+main article .hero-img-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+main article .hero-name p {
+  font-size: 1.87rem;
+  font-weight: 400;
+  margin: 20px 0px 4px;
+  text-align: center;
+}
+main article .hero-description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0px;
+  padding: 15px;
+}
+main article .fa-heart {
+  color: #CC2424;
+  font-size: 1.25rem;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+main article button {
+  align-self: center;
+  background-color: #00669F;
+}
+
+.scroll-down {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #00669F;
+  border-radius: 50%;
+  font-size: 3rem;
+  height: 80px;
+  position: absolute;
+  right: 10px;
+  top: 626px;
+  width: 80px;
+  z-index: 100;
+}
+.scroll-down a:hover {
+  background-color: #00669F;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #00669F;
+  flex-wrap: wrap;
+  height: 60px;
+  justify-content: center;
+  margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+footer p {
+  color: #fff;
+}
+footer .github-logo {
+  margin-left: auto;
+  position: absolute;
+  right: 50px;
+  width: 100px;
+}/*# sourceMappingURL=main.css.map */
